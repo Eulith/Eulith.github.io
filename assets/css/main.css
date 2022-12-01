@@ -122,6 +122,11 @@ input, select, textarea {
 			border-color: transparent;
 		}
 
+/* Big Logo */
+#big_logo {
+  object-position: 0px 0px; } /*from left, from top*/
+
+
 /* Icon */
 
 	.icon {
