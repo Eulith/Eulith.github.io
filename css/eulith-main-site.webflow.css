@@ -23365,3 +23365,26 @@ figcaption {
   float: none;
   gap: 28px;
 }
+
+/* Tabs sit at the right edge, so the panels align to the container's right
+   edge instead of using the offsets tuned for left-aligned tabs. Anchoring to
+   the container rather than the tab needs the dropdown wrapper to be static. */
+.navigation-container {
+  position: relative;
+}
+
+.navigation-container .nav-menu .dropdown {
+  position: static;
+}
+
+.navigation-container .navigation-dropdown.w--open,
+.navigation-container .navigation-dropdown.dev-nav-dropdown.w--open {
+  left: auto;
+  right: 0;
+  margin-left: 0;
+  max-width: 100%;
+}
+
+.navigation-container .navigation-dropdown.w--open .dropdown-pd-6 {
+  max-width: 100%;
+}
