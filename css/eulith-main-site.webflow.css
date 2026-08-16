@@ -23388,3 +23388,44 @@ figcaption {
 .navigation-container .navigation-dropdown.w--open .dropdown-pd-6 {
   max-width: 100%;
 }
+
+/* The two homepage product logos are different shapes: the DeFi Armor wordmark
+   is roughly 4:1 and the POEMS mark 2.7:1. These percentages are the pair that
+   renders both at equal height, so the content below them starts level. Keeping
+   them proportional rather than a fixed height lets them scale with the card. */
+.teps-product-block .image-28 {
+  width: 60%;
+}
+
+.teps-product-block .image-28.poems-logo {
+  width: 40.1%;
+}
+
+/* The grid already gives both cards the same height, but the POEMS blurb runs a
+   line longer. Anchoring the screenshot and button to the bottom holds them on a
+   shared baseline however the text wraps. */
+.teps-product-block .prduct-box {
+  flex-direction: column;
+  display: flex;
+}
+
+.teps-product-block .product-inner {
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  display: flex;
+}
+
+.teps-product-block .product-inner > p {
+  width: 100%;
+}
+
+/* The screenshots only exist at 653px wide, so displaying them near that width
+   leaves nothing spare for high-DPI screens. Capping the link trades size for
+   density and stops them looking soft; the image inside still shrinks with the
+   card on narrow screens. */
+.teps-product-block .product-inner > a.w-inline-block {
+  width: 100%;
+  max-width: 480px;
+  margin-top: auto;
+}
