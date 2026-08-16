@@ -14885,18 +14885,20 @@ figcaption {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  justify-content: flex-start;
 }
 
 .navigation-left {
   align-items: center;
-  width: 40%;
+  flex: 0 0 auto;
+  width: auto;
   display: flex;
 }
 
 .navigation-link {
   justify-content: center;
   align-items: center;
-  padding: 20px 12px;
+  padding: 20px 20px;
   font-family: Urbanist, sans-serif;
   font-size: 16px;
   text-decoration: none;
@@ -14927,12 +14929,7 @@ figcaption {
 }
 
 .navigation-right {
-  flex: 0 auto;
-  justify-content: flex-end;
-  align-items: center;
-  width: 15%;
-  font-size: 16px;
-  display: flex;
+  display: none;
 }
 
 .navigation-dropdown {
@@ -15038,8 +15035,8 @@ figcaption {
 }
 
 .dropdown-toggle-2 {
-  padding-left: 12px;
-  padding-right: 26px;
+  padding-left: 20px;
+  padding-right: 20px;
   transition: all .2s;
 }
 
@@ -15049,15 +15046,16 @@ figcaption {
 
 .nav-menu {
   color: #283338;
-  flex: none;
+  flex: 0 0 auto;
   justify-content: flex-end;
   align-items: center;
-  width: 45%;
-  margin-left: -10px;
-  margin-right: 10px;
+  width: auto;
+  margin-left: auto;
+  margin-right: 0;
   font-size: 15px;
   display: flex;
   position: static;
+  float: none;
 }
 
 .heading-37 {
@@ -23352,4 +23350,22 @@ figcaption {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+}
+
+.navigation-container .navigation-left {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.navigation-container .nav-menu.w-nav-menu {
+  flex: 0 0 auto;
+  width: auto;
+  margin-left: auto;
+  margin-right: 0;
+  float: none;
+  gap: 28px;
+}
+
+.navigation-container .navigation-right {
+  display: none !important;
 }
