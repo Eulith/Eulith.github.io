@@ -23365,7 +23365,3 @@ figcaption {
   float: none;
   gap: 28px;
 }
-
-.navigation-container .navigation-right {
-  display: none !important;
-}
