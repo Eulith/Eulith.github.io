@@ -11158,9 +11158,12 @@ figcaption {
   margin-bottom: 24px;
 }
 
+/* Two columns, not three: the middle column held the email signup card that has
+   since been removed, which left the logo stranded mid-page instead of at the
+   right edge where the copyright below it sits. */
 .tf-grid {
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .tf-3 {
